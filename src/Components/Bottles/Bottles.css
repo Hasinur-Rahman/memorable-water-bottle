@@ -1,0 +1,39 @@
+
+
+.bottles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.selected-img-container{
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.selected-img-container img{
+    width: 100px;
+    margin: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) and  (min-width: 601px){
+    .bottles{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bottles{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+  }
